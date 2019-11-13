@@ -50,7 +50,6 @@ h2 span {
     color:antiquewhite !important;
     font-weight:1000;
     cursor: pointer;
-    color:darkgoldenrod;
     font-family: 'DM Serif Display', serif;
     cursor: pointer;
     vertical-align: middle;
@@ -198,7 +197,33 @@ promotion dishes
     padding-bottom: 1rem;
 }
 
+.wrapper3{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+@media screen and (max-width: 992px) {
+  .wrapper3{
+margin-top: 20rem;
+  }
+}
 
+.footerwrap{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.footer, .footer h2{
+    font-weight:1000;
+    font-family: 'DM Serif Display', serif;
+    
+    background-color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+    .footer{
+      margin-top: 70rem;
+      padding-bottom: 150px;
+  }
+}
 
 /*right section*/
 .index-access {
@@ -232,7 +257,7 @@ promotion dishes
 }
 @media screen and (max-width: 768px) {
   .index-access-box{
-      margin-top: 500px;
+      margin-top: 50rem;
       padding-bottom: 150px;
   }
 }
@@ -359,3 +384,4 @@ promotion dishes
 /*  transition: background-color 0.3s ease-in,
               color 0.3s ease-in;*/
 }
+
