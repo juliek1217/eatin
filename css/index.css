@@ -122,12 +122,17 @@ promotion dishes
   border-radius:50%;
 /*  width: 100%;
   max-width: 200px;*/
-     width: 200px;
-  height: 200px;
+     width: 250px;
+  height: 250px;
   cursor: pointer;
-    border: 0px solid rgba(255, 255, 255, .8);
+    border: 10px solid rgba(255, 255, 255, .5);
 	transition: all 0.4s ease-in-out;
 }
+.avatar:hover{/*
+  opacity: 0.7;*/
+  border: 6px solid rgba(255, 255, 255, .8);
+}
+
 @media screen and (max-width: 1200px) {
   .avatar{
       display: block;
@@ -174,10 +179,6 @@ promotion dishes
   }
 }*/
 
-.avatar:hover{
-  opacity: 0.7;
-  border: 6px solid rgba(255, 255, 255, .8);
-}
 
 
 .wrapper{
