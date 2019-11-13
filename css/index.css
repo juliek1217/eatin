@@ -1,38 +1,112 @@
-body {
-    font-family: "Poppins", Arial, sans-serif; 
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
     background: black;
-    font-size: 17px;
-    line-height: 2;
-    font-weight: 400;
-    color: #fff;
+    color: white;
 }
 
+.index-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .7;
+    background: #000000; 
+}
 
-.index-top{
-    font-family: "DM Serif Display", serif;
-    font-size: 2rem;
-    color:antiquewhite;
+ a, a:link, a:hover{
+/* a, a:link, a:hover, a:focus, a:active {*/
+      text-decoration: none !important;
+      color: inherit !important;
+ }
+
+.index-row{
+/*         margin-right: none;
+    margin-left: none;*/
+}
+
+/*spans*/
+h2 span {
+    color: #ffc515;
+}
+.index-header span {
+    color:chocolate;
+}
+.index-access span {
+    color:#ffc515;
+}
+
+/*header*/
+.index-header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.index-header-left, .index-header-left:hover{
+    font-size: 2.5rem;
+    color:antiquewhite !important;
     font-weight:1000;
     cursor: pointer;
     color:darkgoldenrod;
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 
-.index-font-menu {
+.index-header-right{
+    font-size: 0.5rem;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+/*    vertical-align: middle;*/
+    float: right;
+    text-decoration: none;
+}
+
+.index-header-right-flags img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 2rem;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+    vertical-align: middle;
+    float: right;
+    text-decoration: none;
+}
+
+
+
+
+
+.index-font-menu{
     font-size: 40px;
-    color: #c8a97e;
-    font-weight: normal;
-    font-family: "Great Vibes", cursive;
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+@media screen and (max-width: 1200px) {
+  .index-font-menu{
+/*      font-size: 35px;*/
+  }
 }
 
-.index-font-menu:after{
+.index-font-menu-sub{
+    position: relative;
+    padding-bottom: 0.5em;
+}
+.index-font-menu-sub:after{
     border-bottom: solid 1px;
     bottom: 0;
     content: '';
     display: inline-block;
     left: 0;
     position: absolute;
-    width: 3rem;
+    width: 6rem;
 }
 
 
@@ -47,31 +121,49 @@ promotion dishes
     margin: auto;
   object-fit: cover;
   border-radius:50%;
-  width: 100%;
-  max-width: 200px;
+/*  width: 100%;
+  max-width: 200px;*/
+     width: 200px;
   height: 200px;
   cursor: pointer;
-  transition: .5s ease;
+    border: 0px solid rgba(255, 255, 255, .8);
+	transition: all 0.4s ease-in-out;
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .avatar{
-display: block;
-/*  margin-left: auto;
-  margin-right: auto;
-      margin: auto;*/
-  object-fit: cover;
-  border-radius:50%;
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-    height: 150px;
-  cursor: pointer;
-  transition: .5s ease;
+      display: block;
+      object-fit: cover;
+      border-radius:50%;
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+      transition: .5s ease;
+  }
+}
+@media screen and (max-width: 768px) {
+  .avatar{
+      display: block;
+      object-fit: cover;
+      border-radius:50%;
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+      transition: .5s ease;
+  }
+}
+@media screen and (max-width: 576px) {
+  .avatar{
+      display: block;
+      object-fit: cover;
+      border-radius:50%;
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+      transition: .5s ease;
   }
 }
 
-@media screen and (max-width: 760px) {
+/*@media screen and (max-width: 960px) {
   .avatar{
   display: block;
   object-fit: cover;
@@ -81,28 +173,23 @@ display: block;
   cursor: pointer;
   transition: .5s ease;
   }
-}
+}*/
 
 .avatar:hover{
-  opacity: 0.5;
+  opacity: 0.7;
+  border: 6px solid rgba(255, 255, 255, .8);
 }
 
-
-
-.index-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: .7;
-    background: #000000; 
-}
 
 .wrapper{
     padding-top: 3rem;
 }
+@media screen and (max-width: 992px) {
+  .wrapper h3{
+      font-size: 2rem;
+  }
+}
+
 .wrapper2 {
     padding-top: 1rem;
 }
@@ -112,16 +199,163 @@ display: block;
 }
 
 
-.index-contents {
-    margin-top: -450px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 200px;
+
+/*right section*/
+.index-access {
+    margin-top: 0px;
+/*    border-top: px solid rgba(255, 255, 255, 0.1);*/
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .index-access{
+      margin-top:50px;
+  }
+}
+
+.index-access-box {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+/*    border-left: 3px solid chocolate;*/
+    background-color: rgba(24, 24, 24, 0.54);
+    padding-bottom: 50px;
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .index-access-box{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index-access-box{
+      margin-top: 500px;
+      padding-bottom: 150px;
+  }
+}
+
+.index-access-box-text {
+    font-family: 'Playfair Display', serif;
+}
+
+.index-access-box-text-small {
+    font-family: "Poppins", Arial, sans-serif; 
+    color:darkgray;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 6em;
+}
+@media screen and (max-width: 1200px) {
+  .index-access-box-text-small{
+      padding-bottom: 1em;
+  }
 }
 
 
-@media screen and (max-width: 770px) {
-  .index-contents{
-      margin-top:0;
-      
+
+.index-access-box-text-sub h1 {
+    font-size: 5rem;
+    position: relative;
+    padding-top: 10px;
+    z-index: 2;
+    font-weight: 800;
+    padding-bottom: 0.5em;
+}
+.index-access-box-text-sub h1:before {
+    width: 100px;
+    height: 2px;
+    background: #ff7404;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 1200px) {
+  .index-access-box-text-sub h1{
+      font-size: 4rem;
   }
+}
+@media screen and (max-width: 992px) {
+  .index-access-box-text-sub h1{
+      font-size: 3rem;
+  }
+}
+
+
+/*custom buttons*/
+.ghost-button {
+  display: inline-block;
+  padding: 8px;
+  color: #fff !important;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+.ghost-button-fixwidth {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff !important;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-fixwidth:hover,
+.ghost-button-fixwidth:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+.ghost-button-fixwidth img{
+    margin-left: 0;
+    margin-right: 1rem;
+    width: 2rem;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+    vertical-align: middle;
+    float: left;
+    text-decoration: none;
+}
+
+
+.ghost-button-filled {
+    background-color:#c8a97e;
+  display: inline-block;
+  padding: 8px;
+  color: #fff !important;
+  border: 1px solid #c8a97e;
+  text-align: center;
+  outline: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-filled:hover,
+.ghost-button-filled:active {
+    border: 1px solid #fff;
+      color: #fff !important;
+   background: none;
+/*  background-color:coral !important;
+  color: antiquewhite !important;*/
+/*  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;*/
 }
