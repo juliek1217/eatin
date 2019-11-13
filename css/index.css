@@ -3,8 +3,16 @@ body, html{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: black;
-    color: white;
+    color: white !important;
 }
+
+/*body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+     color: #333; 
+    background-color: #fff;
+}*/
 
 .index-overlay {
     position: absolute;
@@ -45,9 +53,9 @@ h2 span {
     margin-bottom: 10px;
     text-decoration: none;
 }
-.index-header-left, .index-header-left:hover{
+.index-header-left, .index-header-left a,.index-header-left:hover{
     font-size: 2.5rem;
-    color:antiquewhite !important;
+    color:#FFFFFF;
     font-weight:1000;
     cursor: pointer;
     font-family: 'DM Serif Display', serif;
@@ -122,8 +130,8 @@ promotion dishes
   border-radius:50%;
 /*  width: 100%;
   max-width: 200px;*/
-     width: 250px;
-  height: 250px;
+     width: 200px;
+  height: 200px;
   cursor: pointer;
     border: 10px solid rgba(255, 255, 255, .5);
 	transition: all 0.4s ease-in-out;
@@ -217,7 +225,7 @@ margin-top: 20rem;
     font-weight:1000;
     font-family: 'DM Serif Display', serif;
     
-    background-color: #FFFFFF;
+    background-color: black;
 }
 @media screen and (max-width: 768px) {
     .footer{
@@ -272,6 +280,7 @@ margin-top: 20rem;
     color:darkgray;
     font-size: 1rem;
     position: relative;
+    padding-bottom: 6em;    
     padding-bottom: 6em;
 }
 @media screen and (max-width: 1200px) {
@@ -285,7 +294,7 @@ margin-top: 20rem;
 .index-access-box-text-sub h1 {
     font-size: 5rem;
     position: relative;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     z-index: 2;
     font-weight: 800;
     padding-bottom: 0.5em;
