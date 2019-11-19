@@ -37,8 +37,7 @@ p {margin: 0 0 10px;}
 
 
 .main {
-  padding: 200px;
-  /*margin-top: 100px;*/
+  padding-top: 150px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 
@@ -119,6 +118,7 @@ p {margin: 0 0 10px;}
 
 
 .topnav {
+    z-index: 9999;
       overflow: hidden;
 /*  background-color: #f1f1f1;*/
     background-color: rgba(240,240,240,.9);
