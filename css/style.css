@@ -36,12 +36,198 @@ p {margin: 0 0 10px;}
 }
 
 
+.main {
+  padding: 200px;
+  /*margin-top: 100px;*/
+  height: 1500px; /* Used in this example to enable scrolling */
+}
 
-/* header: navigation */
+
+/*----------------- header: navigation -----------------*/
+.header-nav-icon img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 5rem;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    display:block;
+    margin:auto;
+}
+
+/*spans*/
+.header-logo-box span {
+    color:chocolate;
+}
+.header-logo-box span {
+    color:#ffc515;
+}
+
+/*header*/
+.header-logo-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.header-logo, .header-logo a, .header-logo h3, .header-logo:hover{
+    font-size: 27px;
+    color:black;
+    font-weight:1000;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.header-globe-box{
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    /*float: right;*/
+    /*text-decoration: none;*/
+}
+
+
+.topnav .header-globe{
+    float: right;
+    cursor: pointer;
+    display: block;
+    font-size: 0.5rem;
+    font-family: 'DM Serif Display', serif;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/*.header-globe img, .header-globe a{*/
+.topnav .header-globe img, .topnav .header-globe a{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 3rem;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    vertical-align: middle;
+    text-decoration: none;
+    display:block;
+    margin:auto;
+    margin-top: 15px;
+}
+
+
+.topnav {
+      overflow: hidden;
+/*  background-color: #f1f1f1;*/
+    background-color: rgba(240,240,240,.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  /*color: #424242;*/
+    color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  /*background-color: #ddd;*/
+  color: black;
+}
+
+.topnav a.active {
+/*  background-color: #ddd;*/
+    font-weight: 600;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 25px 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive img {
+    float: right;
+    display: block;
+    text-align: left;
+  }
+}
+
+.topnav i {
+    /*background-color: white;*/
+  float: right;
+  padding: 11px;
+/*  margin-top: 8px;
+  margin-right: 16px;*/
+  border: none;
+  font-size: 17px;
+        display:block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.topnav input[type=text]{
+box-shadow: inset 0px -1px 0px #E2E2E2;
+  float: right;
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+        display:block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/*----------------- END header: navigation -----------------*/
 
 
 
 
+
+/*-----------------         footer         -----------------*/
 /* The footer is fixed to the bottom of the page */
 footer{
 	position: fixed;
@@ -244,13 +430,13 @@ footer{
     padding-bottom: 5rem;
 /*	margin: 0;*/
 }
+/*-----------------      END footer      -----------------*/
 
 
 
 
 
-
-/*modal*/
+/*-------------------------modal-------------------------*/
 .blocker{
     background: rgba( 255, 255, 255, 0.3 ) !important;
 }
@@ -277,7 +463,6 @@ footer{
     width: 4rem;
     cursor: pointer;
     font-family: 'DM Serif Display', serif;
-    cursor: pointer;
     vertical-align: middle;
     text-decoration: none;
     display:block;
@@ -292,4 +477,23 @@ footer{
 
 .modal-row {
     padding-top: 10px;
+}
+
+
+
+
+
+
+/*----------------------main menus----------------*/
+.menu-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.menu-price {
+  color: grey;
+  font-size: 22px;
 }

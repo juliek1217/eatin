@@ -5,50 +5,113 @@
         <meta charset="utf-8">      
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <!--ONLINE LINK bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--DEFAULT: grids-->
+        <link rel="stylesheet" href="css/grid/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/grid/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/grid/bootstrap.css">
+        <link rel="stylesheet" href="css/grid/bootstrap.min.css">
         
         <!--google fonts-->
         <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         
         <!--default css-->
         <link rel="stylesheet" href="css/style.css">
-        <!--default Animation effects class: ftco-animate-->
-        <link rel="stylesheet" href="css/welcome/animate.css">
         
-        <!--icons-->
+        <!--DEFAULT: icons-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        <!--only for menu-->
-            <link rel="stylesheet" href="css/menu/menu.css">
+        <!--DEFAULT: modal-->
+            <!-- Remember to include jQuery :) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+            <!-- jQuery Modal -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <!--END DEFAULT: modal-->
+        
+        <!--only for home-->
+            <link rel="stylesheet" href="css/home/home.css">
     </head>
     
+    
+<!--    <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/1uk.png">-->
     <body>
-        <header>
-            <h1> Responsive Footer </h1>
-            <h2>Have a look</h2>
-            <h2><span>On Below Footer</span></h2>
-        </header>
+        <div class="topnav" id="myTopnav">
+            
+            <a href="home.html" class="header-logo" style = "font-size: 27px;">Eat<span style="color:#ffc515">in</span>.</a>
+            <a href="#home" class="active header-nav-icon"><img src="/images/icons/menu.png">Menu</a>
+            <a href="#news" class="header-nav-icon"><img src="/images/icons/dinner.png">My Order</a>
+            <a href="#contact" class="header-nav-icon"><img src="/images/icons/ellipsis.png">More</a>
+            
+            <a href="#ex1" class="header-globe" rel="modal:open"><img src="/images/welcome/flag/lang.png"></a>
+            
+            <input type="text" placeholder="Find Dishes">
+            <i class="fa fa-search" style="font-size:24px;"></i>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-size:24px"></i></a>
+        </div>
+        <!--END nav-->
+        
+
+        
+        <!--main-->
+        <div class="main">
+            <div class="container">
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="index-row wrapper">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ftco-animate paddingBt">
+                            <div class="ftco-animate">
+                                <div class="card">
+                                    <img src="images/welcome/pizza.jpg" style="width:100%">
+                                    <h1>Tailored Jeans</h1>
+                                    <p class="price">$19.99</p>
+                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                                    <p><button>Add to Cart</button></p>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 paddingBt">
+                            <div class="ftco-animate">
+                                
+                                <div class="card">
+                                    <img src="images/welcome/chicken-caesar-salad.jpg" style="width:100%">
+                                    <h1>Tailored Jeans</h1>
+                                    <p class="price">$19.99</p>
+                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                                    <p><button>Add to Cart</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 paddingBt">
+                            <div class="ftco-animate">
+                                
+                                <div class="card">
+                                    <img src="images/welcome/chicken-caesar-salad.jpg" style="width:100%">
+                                    <h1>Tailored Jeans</h1>
+                                    <p class="price">$19.99</p>
+                                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                                    <p><button>Add to Cart</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!--END main-->
         
         
-        
-        <h1> Responsive Footer </h1>
-            <h2>Have a look</h2>
-            <h2><span>On Below Footer</span></h2>
-        
-        <h1> Responsive Footer </h1>
-            <h2>Have a look</h2>
-            <h2><span>On Below Footer</span></h2><h1> Responsive Footer </h1>
-            <h2>Have a look</h2>
-            <h2><span>On Below Footer</span></h2>
-        
-        
-        
-        <!--footer-->
+        <!--default footer-->
         <footer class="footer-distributed">
             <div class="footer-left">
                 <h4>About us</h4>
@@ -68,36 +131,102 @@
 				</div>
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:info@eatsin.com">info@eatsin.com</a></p>
+					<p><a href="mailto:info@eatsin.com">info@eatin.com</a></p>
 				</div>
 			</div>
 			<div class="footer-right">
 				<p class="footer-company-about">
 					<span>Quick Links</span>
-					Discover our world of food collection.</p>
+					Discover our service! Subscribe to our channel.</p>
 				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://ca.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
 				</div>
 			</div>
             
             <div class="col-md-12 text-center footer-bottom" style="color: darkgray">
-                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> EAT IN, Ltd.</p>
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Eatin, Ltd.</p>
             </div>
         </footer>
-        <!--END footer-->  
+        <!--END default footer-->
         
-        <!--downloaded JS Library for welcome page--> 
-        <script src="js/welcome/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/welcome/jquery.waypoints.min.js"></script>
-        <script src="js/welcome/jquery.stellar.min.js"></script>
-        <script src="js/welcome/owl.carousel.min.js"></script>
-        <script src="js/welcome/aos.js"></script>
-        <script src="js/welcome/scrollax.min.js"></script>
-        <script src="js/welcome/main.js"></script>
-        <!--END downloaded JS Library--> 
+        
+        <!-- modal -->
+        <div id="ex1" class="modal">
+                                <p>Select your language</p>
+                                    <div class = "modal-row">
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/1uk.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>English</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/2france.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Français</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/3china.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>中文</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/4spanish.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Español</h5>
+                                        </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class = "modal-row">
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/8korea.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>한국어</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/6germany.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Deutsch</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/7russia.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Русский</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-xs-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/5india.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>हिन्दी</h5>
+                                        </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+        <!--END Modal -->
+        
+        <!--nav js-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+        </script>
+        <!--END nav js-->
     </body>
 </html>

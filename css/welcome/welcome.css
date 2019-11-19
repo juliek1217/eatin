@@ -79,7 +79,6 @@ h2 span {
     width: 2rem;
     cursor: pointer;
     font-family: 'DM Serif Display', serif;
-    cursor: pointer;
     vertical-align: middle;
     float: right;
     text-decoration: none;
@@ -387,19 +386,4 @@ margin-top: 20rem;
     border: 1px solid #fff;
       color: #fff !important;
    background: none;
-}
-
-/*modal*/
-.blocker{
-    background: rgba( 255, 255, 255, 0.3 ) !important;
-}
-.modal p {
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    line-height: 1.666;
-    color: #5e6c76;
-    margin: 1em 0;
-    font-size: 18px;
-    text-align: center;
-    
 }
