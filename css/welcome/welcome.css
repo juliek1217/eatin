@@ -25,15 +25,13 @@ body, html{
     background: #000000; 
 }
 
- a, a:link, a:hover{
-/* a, a:link, a:hover, a:focus, a:active {*/
+ a{
       text-decoration: none !important;
-      color: inherit !important;
+     /* color: inherit !important;*/
  }
 
-.index-row{
-/*         margin-right: none;
-    margin-left: none;*/
+.body-row{
+/*    margin-top: -55rem;*/
 }
 
 /*spans*/
@@ -356,7 +354,7 @@ margin-top: 20rem;
 .ghost-button-fixwidth:hover,
 .ghost-button-fixwidth:active {
   background-color: #fff;
-  color: #000;
+  color: #000 !important;
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
 }
@@ -389,9 +387,19 @@ margin-top: 20rem;
     border: 1px solid #fff;
       color: #fff !important;
    background: none;
-/*  background-color:coral !important;
-  color: antiquewhite !important;*/
-/*  transition: background-color 0.3s ease-in,
-              color 0.3s ease-in;*/
 }
 
+/*modal*/
+.blocker{
+    background: rgba( 255, 255, 255, 0.3 ) !important;
+}
+.modal p {
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.666;
+    color: #5e6c76;
+    margin: 1em 0;
+    font-size: 18px;
+    text-align: center;
+    
+}

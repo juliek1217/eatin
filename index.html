@@ -3,19 +3,27 @@
     <head>
         <title>Welcome to Eatin.</title>
         <meta charset="utf-8">      
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--ONLINE LINK bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--DEFAULT: grids-->
+        <link rel="stylesheet" href="css/grid/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/grid/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/grid/bootstrap.css">
+        <link rel="stylesheet" href="css/grid/bootstrap.min.css">
         
-        
-        <!--google fonts-->
+        <!--DEFAULT: google fonts-->
         <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         
+        <!--DEFAULT: style css-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--DEFAULT: Animation effects class: ftco-animate-->
+        <link rel="stylesheet" href="css/welcome/animate.css">
+        
+        <!--DEFAULT: icons-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
         <!--only index-->
             <link rel="stylesheet" href="css/welcome/welcome.css">
@@ -25,7 +33,7 @@
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <!--Load Background-->
             <style>
-                .bg {
+                body {
                     /* The image used */
                     background-image: url("/images/welcome/bnb5.jpg");
                     /* Full height */
@@ -36,148 +44,217 @@
                     background-size: cover;
                 }
             </style>
-            <!--default Animation effects class: ftco-animate-->
-            <link rel="stylesheet" href="css/welcome/animate.css">
-        <!--END only index-->
+            <!--modal-->
+            <!-- Remember to include jQuery :) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+            <!-- jQuery Modal -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+            <!--END modal-->
         
+        <!--END only index-->
     </head>
     
-    
+<!--    <p><a href="#ex1" class="ghost-button-fixwidth"  rel="modal:open"><-->
     
     
     <body>
-        <div class="bg">
-            <div class="index-overlay"></div>
+        <div class="index-overlay"></div>
             
-            <!--header-->
-            <div class="index-row">
+        <!--header-->
+        <div class="index-row">
                 <div class="container">
                     <div class="col-lg-12 col-md-12 col-sm-12 index-header">
                         <a href="home.html" class="index-header-left" style="color: white">Eat<span style="color:#ffc515">in</span>.</a>
-                        <a href="home.html" class="index-header-right-flags"><img src="/images/welcome/flag/lang.png"></a>
+                        <a href="#ex1" class="index-header-right-flags" rel="modal:open"><img src="/images/welcome/flag/lang.png"></a>
                     </div>
                 </div>
-            </div>
-            <!--END header-->
-          
+        </div>
+        <!--END header-->
+
             
-            <div class="index-row">
+        <div class="body-row">
+            <div class="container">
                 <!--feature-->
-                <div class="container">
-    
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="index-font-menu text-left ftco-animate wrapper">
-                            <div class="index-font-menu-sub" style="color: white">Featured Menu</div>
-                        </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="index-font-menu text-left ftco-animate wrapper">
+                        <div class="index-font-menu-sub" style="color: white">Featured Menu</div>
+                    </div>
             
-                        <div class="index-row wrapper">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ftco-animate paddingBt">
-                                <div class="ftco-animate">
-                            <img src="images/welcome/pizza.jpg" class="avatar">
-                            <div class="text text-center">
-                            <h3 style="color:bisque; font-family: 'Poppins';">Margherita</h3>
-                            <h5 style="color:darkgray; font-family: 'Poppins';">Tomatoes, mozzarella, basil </h5>
-                            <h4 style="color:#ff7404; font-family: 'Poppins';">$16</h4>
-				                <a href="menu.html" class="ghost-button-filled">ORDER NOW</a>
-			                 </div>
+                    <div class="index-row wrapper">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ftco-animate paddingBt">
+                            <div class="ftco-animate">
+                                <img src="images/welcome/pizza.jpg" class="avatar">
+                                <div class="text text-center">
+                                    <h3 style="color:bisque; font-family: 'Poppins';">Margherita</h3>
+                                    <h5 style="color:darkgray; font-family: 'Poppins';">Tomatoes, mozzarella, basil </h5>
+                                    <h4 style="color:#ff7404; font-family: 'Poppins';">$16</h4>
+				                    <a href="menu.html" class="ghost-button-filled">ORDER NOW</a>
 			                     </div>
+			                 </div>
                         </div>
                             
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 paddingBt">
-    				        <div class="ftco-animate">
-			             <img src="images/welcome/chicken-caesar-salad.jpg" class="avatar">
-			              <div class="text text-center">
-                        <h3 style="color:bisque; font-family: 'Poppins';"> Caesar Salad</h3>
-                              <h5 style="color:darkgray; font-family: 'Poppins';">chicken, vinegar, mustard, lettuce</h5>
-                              <h4 style="color:#ff7404; font-family: 'Poppins';">$8</h4>
-				              <a href="menu.html" class="ghost-button-filled">ORDER NOW</a>
-			              </div>
-			                 </div>
-                        </div>
-                    </div>
-                  </div>
-                  <!--END feature-->
-                  
-                  <!--access-->
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                      <div class="index-access ftco-animate">
-                          <div class="index-access-box">
-                              <div class="index-access-box-text">
-                        <h2 style="color:white"><span>Room Service</span> at your fingertips!</h2>
-                                  <div class="index-access-box-text-small">
-                                  <h5>No longer do you have to waste your time going through the menu and call room service for your eats. Just a few clicks and you can enjoy our hotel's favorite dishes in bed.</h5></div>
-                                  
-                                  <div class="index-access-box-text-sub">
-                                  <h1 style="color:white; font-family: 'DM Serif Display';">Explore our menu<span>.</span></h1>
-                                  </div>
-                    </div>
-                    
-                        <div class="index-access-box-button text-center">
-                        <p><a href="home.html" class="ghost-button-fixwidth"><img src="/images/welcome/flag/united-kingdom.png">MORE MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a></p>
-                        
-                        <p><a href="home.html" class="ghost-button-fixwidth"><img src="/images/welcome/flag/france.png" >PLUS DE MENU&nbsp;&nbsp;&nbsp;&nbsp;>></a></p>
-                        <p><a href="home.html" class="ghost-button-fixwidth"><img src="/images/welcome/flag/lang.png">SELECT LANGUAGE</a></p>
-                        </div>
-                    
+                            <div class="ftco-animate">
+                                <img src="images/welcome/chicken-caesar-salad.jpg" class="avatar">
+                                <div class="text text-center">
+                                    <h3 style="color:bisque; font-family: 'Poppins';"> Caesar Salad</h3>
+                                    <h5 style="color:darkgray; font-family: 'Poppins';">chicken, vinegar, mustard, lettuce</h5>
+                                    <h4 style="color:#ff7404; font-family: 'Poppins';">$8</h4>
+                                    <a href="menu.html" class="ghost-button-filled">ORDER NOW</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--END access-->
-                
-            </div>
-        </div>
-        <!--END bg-->
+                <!--END feature-->
+                  
+                <!--access-->
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="index-access ftco-animate">
+                        <div class="index-access-box">
+                            <div class="index-access-box-text">
+                                <h2 style="color:white"><span>Room Service</span> at your fingertips!</h2>
+                                <div class="index-access-box-text-small">
+                                <h5>No longer do you have to waste your time going through the menu and call room service for your eats. Just a few clicks and you can enjoy our hotel's favorite dishes in bed.</h5></div>
+                                <div class="index-access-box-text-sub">
+                                    <h1 style="color:white; font-family: 'DM Serif Display';">Explore our menu<span>.</span></h1>
+                                </div>
+                            </div>
+                            
+                            <div class="index-access-box-button text-center">
+                                <p><a href="home.html" class="ghost-button-fixwidth"><img src="/images/welcome/flag/united-kingdom.png">MORE MENU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a></p>
+                                
+                                <p><a href="home.html" class="ghost-button-fixwidth"><img src="/images/welcome/flag/france.png" >PLUS DE MENU&nbsp;&nbsp;&nbsp;&nbsp;>></a></p>
+                                
+                                
+                                <p><a href="#ex1" class="ghost-button-fixwidth"  rel="modal:open"><img src="/images/welcome/flag/lang.png">SELECT LANGUAGE</a></p>
+                                
+                                <!-- modal -->
+                                <div id="ex1" class="modal">
+                                <p>Select your language</p>
+                                    <div class = "modal-row">
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/1uk.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>English</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/2france.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Français</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/3china.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>中文</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/4spanish.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Español</h5>
+                                        </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class = "modal-row">
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/8korea.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>한국어</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/6germany.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Deutsch</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/7russia.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>Русский</h5>
+                                        </div>
+                                        </div> 
+                                        <div class = "col-md-3">
+                                        <a href="home.html" class="modal-flag"><img src="/images/welcome/flag/5india.png"></a>
+                                        <div class="text-center modal-flag">
+                                            <h5>हिन्दी</h5>
+                                        </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                <!--END Modal -->
 
-        <!--footer-->
-        <div class="index-row footer">
-        <div class="container">
-          <div class="col-md-12">
-              <div class="footerwrap">
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                      <h4>About us</h4>
-                      <h5 style="color: dimgray">Eatin provides smart room service at your figertips, the perfect meal delivered right to your room.</h5>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                      <h4>Contact Info</h4>
-                      <h5 style="font-weight: 500; color: dimgray">
-                      Address:<br>
-                      76 University Cres., Winnipeg, MB, Canada<br>
-                      Phone:<br>
-                      +1 204 394 2390<br>
-                      Email:<br>
-                      info@eatsin.com</h5>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                      <h4>Quick Links</h4>
-                      <h5 style="font-weight: 500; color:coral">
-                      <a href="home.html">Need help?</a><br>
-                      <a href="home.html">Events</a><br>
-                      <a href="home.html">FAQs</a><br>
-                      </h5>
-                  </div>
-            </div>
-            </div>
-                <div class="index-row">
-                <div class="col-md-12 text-center">
-                    <div class="wrapper3">
-                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> EAT IN, Ltd.</p>
-                  </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
+                <!--END access--> 
             </div>
         </div>
-        <!--END footer-->  
-  
-    <!--downloaded JS Library for welcome page-->  
-    <script src="js/welcome/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/welcome/jquery.waypoints.min.js"></script>
-    <script src="js/welcome/jquery.stellar.min.js"></script>
-    <script src="js/welcome/owl.carousel.min.js"></script>
-    <script src="js/welcome/aos.js"></script>
-    <script src="js/welcome/scrollax.min.js"></script>
-    <script src="js/welcome/main.js"></script>
-    <!--END downloaded JS Library--> 
+
         
+        
+        
+        
+        
+        <!--default footer-->
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <h4>About us</h4>
+                <h5 style = "color:lightgray">Eatin provides smart room service at your figertips, the perfect meal delivered right to your room.</h5>
+                <br>
+			</div>
+ 
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+                    <p>76 University Cres.<span>Winnipeg, MB</span></p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 204 394 2390</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:info@eatsin.com">info@eatsin.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Quick Links</span>
+					Discover our service! Subscribe to our channel.</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="https://ca.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+            
+            <div class="col-md-12 text-center footer-bottom" style="color: darkgray">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> EAT IN, Ltd.</p>
+            </div>
+        </footer>
+        <!--END default footer-->
+        
+        <!--downloaded JS Library for animation-->  
+        <script src="js/welcome/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/welcome/jquery.waypoints.min.js"></script>
+        <script src="js/welcome/jquery.stellar.min.js"></script>
+        <script src="js/welcome/owl.carousel.min.js"></script>
+        <script src="js/welcome/aos.js"></script>
+        <script src="js/welcome/scrollax.min.js"></script>
+        <script src="js/welcome/main.js"></script>
+        <!--END downloaded JS Library for animation--> 
     </body>
 </html>
