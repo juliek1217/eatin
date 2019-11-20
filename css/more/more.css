@@ -6,8 +6,6 @@ body {
     font-weight: 400;
     color: #666666;
 }
-
-
 .card img {
   display: block;
   margin-left: auto;
@@ -15,6 +13,9 @@ body {
   width: 50%;
 }
 
+.card h4, .card h5{
+    text-align: center;
+}
 
 .card h4{
     color: black;
