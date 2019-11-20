@@ -229,7 +229,7 @@ p {margin: 0 0 10px;}
 /*-----------------         footer         -----------------*/
 /* The footer is fixed to the bottom of the page */
 footer{
-	position: fixed;
+	position: relative;
 	bottom: 0;
     color: white;
 }
