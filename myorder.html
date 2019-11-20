@@ -76,100 +76,88 @@
                     </div>
                 </div>
                 
-                
+                <div class="col-lg-10 col-md-10 col-sm-10">
                 <div class="shopping-cart">
                     <!-- Title -->
-                    <div class="title">
-                        Shopping Bag
-                    </div>
+                    <div class="title">Order Summary</div>
                     
                     <!-- Product #1 -->
                     <div class="item">
                         <div class="buttons">
-                            <span class="delete-btn"></span>
-                            <span class="like-btn"></span>
+                            <i class="fa fa-times-circle delete-btn" style="font-size:28px"></i>
                         </div>
                         
                         <div class="image">
-                            <img src="item-1.png" alt="" />
+                            <img src="images/welcome/pizza.jpg" class="avatar">
                         </div>
                         
                         <div class="description">
                             <span>Margherita</span>
-                            <span>Bball High</span>
-                            <span>White</span>
+                            <span>670.0 Cals</span>
                         </div>
                         <div class="quantity">
-                            <button class="plus-btn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
+                            <i class="fa fa-plus-square plus-btn" style="font-size:24px" ></i>
                             <input type="text" name="name" value="1">
-                            <button class="minus-btn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
+                            <i class="fa fa-minus-square minus-btn" style="font-size:24px"></i>
                         </div>
                         
                         <div class="total-price">$16.00</div>
                     </div>
                     
+                    
+                    
+                    
                     <!-- Product #2 -->
                     <div class="item">
                         <div class="buttons">
-                            <span class="delete-btn"></span>
-                            <span class="like-btn"></span>
+                            <i class="fa fa-times-circle delete-btn" style="font-size:28px"></i>
                         </div>
                         
                         <div class="image">
-                            <img src="item-2.png" alt=""/>
+                            <img src="images/welcome/chicken-caesar-salad.jpg" class="avatar">
                         </div>
                         
                         <div class="description">
-                            <span>Maison Margiela</span>
-                            <span>Future Sneakers</span>
-                            <span>White</span>
+                            <span>Avocado Salad</span>
+                            <span>670.0 Cals</span>
+                        </div>
+                        <div class="quantity">
+                            <i class="fa fa-plus-square plus-btn" style="font-size:24px" ></i>
+                            <input type="text" name="name" value="1">
+                            <i class="fa fa-minus-square minus-btn" style="font-size:24px"></i>
                         </div>
                         
-                        <div class="quantity">
-                            <button class="plus-btn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="1">
-                            <button class="minus-btn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                        </div>
-                        <div class="total-price">$870</div>
+                        <div class="total-price">$8.00</div>
                     </div>
                     
-                    <!-- Product #3 -->
-                    <div class="item">
-                        <div class="buttons">
-                            <span class="delete-btn"></span>
-                            <span class="like-btn"></span>
-                        </div>
+                    <!--total-->
+                    <div class="total">
                         
-                        <div class="image">
-                            <img src="item-3.png" alt="" />
-                        </div>
-                        
-                        <div class="description">
-                            <span>Our Legacy</span>
-                            <span>Brushed Scarf</span>
-                            <span>Brown</span>
-                        </div>
-                        
-                        <div class="quantity">
-                            <button class="plus-btn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="1">
-                            <button class="minus-btn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                        </div>
-                        
-                        <div class="total-price">$349</div>
+                        <div class="col-xs-8 total-box">Subtotal<br>GST<br>PST</div>
+                        <div class="col-xs-4 total-box">$16.00<br>$16.00<br>$29.00</div>
+
+                        <div class="col-xs-8 total-box" style="color: black; font-weight: 600;">Total</div>
+                        <div class="col-xs-4 total-box" style="color: black; font-weight: 600;">$32.00</div>
                     </div>
+                    
+                </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="placeorder">
+                    <!-- Title -->
+                    <div class="title">15 Minutes</div>
+
+                    <div class="contents"><p>
+                        Your dishes will be delivered to your room within 15 minutes if you place order now.</p>
+                        <button class="button button1"><h6>Place Order Now</h6></button>
+                        
+                        <button class="button button1"><h6>Pre-order</h6></button>
+                    </div>
+                    
+                </div>
                 </div>
                 
                 
@@ -340,43 +328,31 @@
         
         <!------only myorder: shopping cart Javascript-->
         <script>
-            $('.like-btn').on('click', function() {
-                $(this).toggleClass('is-active');
+            $('.minus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+                if (value &amp;gt; 1) {
+                    value = value - 1;
+                } else {
+                    value = 0;
+                }
+                $input.val(value);
             });
             
-        </script>
-        
-        <script>
-$('.minus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
- 
-    if (value &amp;gt; 1) {
-        value = value - 1;
-    } else {
-        value = 0;
-    }
- 
-  $input.val(value);
- 
-});
- 
-$('.plus-btn').on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    var $input = $this.closest('div').find('input');
-    var value = parseInt($input.val());
- 
-    if (value &amp;lt; 100) {
-        value = value + 1;
-    } else {
-        value =100;
-    }
- 
-    $input.val(value);
-});
+            $('.plus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+                if (value &amp;lt; 100) {
+                    value = value + 1;
+                } else {
+                    value =100;
+                }
+                $input.val(value);
+            });
         </script>
         <!--END only myorder: shopping cart Javascript-->
     </body>
