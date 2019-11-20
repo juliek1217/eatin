@@ -5,14 +5,23 @@ body {
     line-height: 2;
     font-weight: 400;
     color: #666666;
+/*    padding: 10px;*/
+}
+.main-menu {
+    padding-top: 125px;
+    margin-left: 140px;
+    padding-right: 10px;
 }
 
 
 .card img {
+    height: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+    width:100%;
+    width:100%;
+    object-fit: cover;
 }
 
 
@@ -20,3 +29,117 @@ body {
     color: black;
     font-weight: 800;
 }
+
+
+
+
+/*------------------sidenav-------------*/
+.sidenav {
+    margin-top: 100px;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  /*background: #eee;*/
+    background: white;
+  overflow-x: hidden;
+  padding: 8px 0;
+border-radius: 8px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+    font-weight: 800;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {width: 110px;}
+    .sidenav a {font-size: 12px;}
+  
+}
+
+.sidenav a.active {
+    color:#666666;
+}
+/*------------------END sidenav-------------*/
+
+
+
+/*---------------------Right sticky side bar-------------*/
+.home-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-main,
+.home-right-sidebar {
+  border: 0px solid gray;
+/*  padding: 15px;*/
+  background-color: #fff;
+}
+@media screen and (max-width: 1020px) {
+  .home-right-sidebar{display: none;}
+}
+
+.home-main {
+  width: 70%;
+/*  height: 150vh;*/
+}
+
+@media screen and (max-width: 1020px) {
+  .home-main{width: 100%;}
+}
+
+
+.home-right-sidebar {
+  width: 25%;
+    height:400px;
+/*  height: 25vh;*/
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px 2px rgba(200,200,200,0.90);
+    text-align: center;
+}
+.home-right-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px;
+}
+
+.contents {
+    padding-top: 10px;
+    text-align: center;
+}
+.bottom{
+/*    border-top: 1px solid #666666;*/
+    padding-top: 10px;
+    text-align: center;
+}
+.bottom2{
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+ /*------------------END Right sticky side bar-------------*/

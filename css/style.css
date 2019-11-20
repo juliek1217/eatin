@@ -534,5 +534,24 @@ footer{
 /*-----------------      END main menus      -----------------*/
 
 
-
+/*------------------ button-simple --------------------------------*/
+.button-simple {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+    border-radius: 8px;
+}
+.button-orange {background-color:red;}
+.button-lightred {background-color:indianred;}
+.button-blue {background-color: #008CBA;}
+.button-green {background-color: #4CAF50;}
+.button-yellow {background-color:#ffc515;}
+/*------------------END button-simple--------------------------------*/
 

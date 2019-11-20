@@ -36,9 +36,9 @@
         
         
         
-        <!----------------only for placeorder: Don't include in other html files-------------------->
-        <link rel="stylesheet" href="css/placeorder/placeorder.css">
-        <!----------------END only for placeorder: Don't include in other html files---------------->
+        <!----------------only for checkout: Don't include in other html files-------------------->
+        <link rel="stylesheet" href="css/checkout/checkout.css">
+        <!----------------END only for checkout: Don't include in other html files---------------->
     </head>
     
 
@@ -48,7 +48,7 @@
             <a href="index.html" class="header-logo" style = "font-size: 36px;" id="logo">Eat<span style="color:#ffc515">in</span>.</a>
             <a href="home.html" class="header-nav-icon" id="menu"><img src="/images/icons/menu.png" id="icons-menu"><p>Menu</p></a>
             <a href="myorder.html" class="header-nav-icon"  id="myorder"><img src="/images/icons/dinner.png" id="icons-myorder"><p>My Order</p></a>
-            <a href="placeorder.html" class="active header-nav-icon" id="placeorder"><img src="/images/icons/payclick.png" id="icons-placeorder"><p>Checkout</p></a>
+            <a href="checkout.html" class="active header-nav-icon"  id="placeorder"><img src="/images/icons/payclick.png" id="icons-placeorder"><p>Checkout</p></a>
             <a href="more.html" class="header-nav-icon"  id="more"><img src="/images/icons/ellipsis.png" id="icons-more"><p>More</p></a>
             <!--language icon-->
             <a href="#ex1" class="header-globe" rel="modal:open" title="title-globe"><img src="/images/welcome/flag/lang.png"></a>
@@ -69,57 +69,95 @@
         
         <!---------------------------------------------main: Edit only this part!!!--------------------------------------------->
         <div class="main">
-            
-            <div class="container ">
+            <div class="container">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="row text-title wrapper">
-                        <h1>Place Order</h1>
+                        <h1>Checkout</h1>
                     </div>
                 </div>
                 
-                
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="order">
-                                <h4>Order Number</h4>
-                                <a href="#ex1" rel="modal:open"><h5>B191026255</h5></a>
-                                <a href="#ex1" rel="modal:open"><h5>B191026255</h5></a>
-                                <a href="#ex1" rel="modal:open"><h5>B191026255</h5></a>
-                            </div>
+                <div class="col-lg-8">
+                <div class="shopping-cart">
+                    <!-- Title -->
+                    <div class="title">Order Summary</div>
+                    
+                    <!-- Product #1 -->
+                    <div class="item">
+                        <div class="buttons">
+                            <i class="fa fa-times-circle delete-btn" style="font-size:28px"></i>
                         </div>
                         
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="order">
-                                <h4>Date</h4>
-                                <a href="#ex5" rel="modal:open"></a>
-                                
-                                <h5>October 26, 2019</h5>
-                            </div>
+                        <div class="image">
+                            <img src="images/welcome/pizza.jpg" class="avatar">
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="order">
-                                <a href="#ex2" rel="modal:open"></a>
-                                <h4>Total</h4>
-                                <h5>it's hard to call to the reception via tablet and catting improve accessibility</h5>
-                            </div>
-                        </div>    
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="order">
-                                <a href="#ex4" rel="modal:open"></a>
-                                <h4>Feedback</h4>
-                                <h5>Your feed back is important for us to improve...</h5>
-                            </div>
+                        
+                        <div class="description">
+                            <span>Margherita</span>
+                            <span>670.0 Cals</span>
                         </div>
+                        <div class="quantity">
+                            <i class="fa fa-plus-square plus-btn" style="font-size:24px" ></i>
+                            <input type="text" name="name" value="1">
+                            <i class="fa fa-minus-square minus-btn" style="font-size:24px"></i>
+                        </div>
+                        
+                        <div class="total-price">$16.00</div>
                     </div>
+
+                    <!-- Product #2 -->
+                    <div class="item">
+                        <div class="buttons">
+                            <i class="fa fa-times-circle delete-btn" style="font-size:28px"></i>
+                        </div>
+                        
+                        <div class="image">
+                            <img src="images/welcome/chicken-caesar-salad.jpg" class="avatar">
+                        </div>
+                        
+                        <div class="description">
+                            <span>Avocado Salad</span>
+                            <span>670.0 Cals</span>
+                        </div>
+                        <div class="quantity">
+                            <i class="fa fa-plus-square plus-btn" style="font-size:24px" ></i>
+                            <input type="text" name="name" value="1">
+                            <i class="fa fa-minus-square minus-btn" style="font-size:24px"></i>
+                        </div>
+                        
+                        <div class="total-price">$8.00</div>
+                    </div>
+                    
+                    <!--total-->
+                    <div class="total">
+                        <div class="col-xs-8 total-box">Subtotal<br>GST<br>PST</div>
+                        <div class="col-xs-4 total-box">$16.00<br>$16.00<br>$29.00</div>
+
+                        <div class="col-xs-8 total-box" style="color: black; font-weight: 600;">Total</div>
+                        <div class="col-xs-4 total-box" style="color: black; font-weight: 600;">$32.00</div>
+                    </div>
+                    
+                </div>
                 </div>
                 
                 
-            </div>       
-        </div>
-        
-        
-        
+                
+                <div class="col-lg-4">
+                <div class="placeorder">
+                    <!-- Title -->
+                    <div class="title"><i class="fa fa-cart-arrow-down" style="font-size:36px"></i> <span> &nbsp;Order Confirm</span></div>
+
+                    <div class="contents"><p>
+                        Your dishes will be delivered to your room within 15 minutes if you place order now.</p>
+                        <p><a href="checkout.html"><button class="button-simple button-orange">Payment</button></a></p>
+                        <a href="checkout.html"><button class="button-simple button-blue">Cancel</button></a>
+                    </div>
+                    
+                </div>
+                </div>
+                
+                
+            </div><!--container-->
+        </div><!--main-->
         
          <!--other modals-->
         <div id="ex2" class="modal">
@@ -281,5 +319,36 @@
             }
         </script>
         <!--END DEFAULT: Top navigation bar Javascript-->
+        
+        
+        <!------only myorder: shopping cart Javascript-->
+        <script>
+            $('.minus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+                if (value &amp;gt; 1) {
+                    value = value - 1;
+                } else {
+                    value = 0;
+                }
+                $input.val(value);
+            });
+            
+            $('.plus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+                if (value &amp;lt; 100) {
+                    value = value + 1;
+                } else {
+                    value =100;
+                }
+                $input.val(value);
+            });
+        </script>
+        <!--END only myorder: shopping cart Javascript-->
     </body>
 </html>

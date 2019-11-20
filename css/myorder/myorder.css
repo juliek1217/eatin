@@ -45,9 +45,9 @@ body {
 
 
 .shopping-cart {
-  width: 750px;
+  width: 690px;
 /*  height: 423px;*/
-  margin: 80px auto;
+  margin-top: 20px;
   background: #FFFFFF;
 /*  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);*/
   box-shadow:   1px 2px 3px 2px rgba(200,200,200,0.90);
@@ -176,15 +176,15 @@ body {
 
 
 .placeorder {
-/*  height: 423px;*/
-  margin: 80px auto;
-  background: #FFFFFF;
+margin-top: 20px;
+/*  background-color: lightgray;*/
 /*  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);*/
   box-shadow:   1px 2px 3px 2px rgba(200,200,200,0.90);
   border-radius: 6px;
- 
-  display: flex;
-  flex-direction: column;
+ display: block;
+    float: right;
+/*  display: flex;
+  flex-direction: column;*/
 }
 
 .placeorder p {
@@ -193,26 +193,11 @@ body {
 
 .contents {
   padding: 20px 20px;
-
+    float: center;
+    text-align: center;
 }
 
-
-
-
-/*button*/
-.button-simple {
-  background-color: #008CBA; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-    border-radius: 8px;
+.contents button {
+    float: center;
+    text-align: center;
 }
-
-.button-blue {background-color: #008CBA;}
-.button-grean {background-color: #4CAF50;}
