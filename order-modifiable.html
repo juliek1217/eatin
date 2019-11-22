@@ -36,9 +36,9 @@
         
         
         
-        <!----------------only for more: Don't include in other html files-------------------->
-        <link rel="stylesheet" href="css/more/more.css">
-        <!----------------END only for more: Don't include in other html files---------------->
+        <!----------------only for checkout: Don't include in other html files-------------------->
+        <link rel="stylesheet" href="css/checkout/checkout.css">
+        <!----------------END only for checkout: Don't include in other html files---------------->
     </head>
     
 
@@ -48,15 +48,15 @@
             <a href="index.html" class="header-logo" style = "font-size: 36px;" id="logo">Eat<span style="color:#ffc515">in</span>.</a>
             <a href="home.html" class="header-nav-icon" id="menu"><img src="images/icons/menu.png" id="icons-menu"><p>Menu</p></a>
             <a href="myorder.html" class="header-nav-icon"  id="myorder"><img src="images/icons/dinner.png" id="icons-myorder"><p>Order History</p></a>
-            <a href="checkout.html" class="header-nav-icon"  id="placeorder"><img src="images/icons/payclick.png" id="icons-placeorder"><p>Checkout</p></a>
-            <a href="more.html" class="active header-nav-icon"  id="more"><img src="images/icons/ellipsis.png" id="icons-more"><p>More</p></a>
+            <a href="checkout.html" class="active header-nav-icon"  id="placeorder"><img src="images/icons/payclick.png" id="icons-placeorder"><p>Checkout</p></a>
+            <a href="more.html" class="header-nav-icon"  id="more"><img src="images/icons/ellipsis.png" id="icons-more"><p>More</p></a>
             <!--language icon-->
             <a href="#ex1" class="header-globe" rel="modal:open" title="title-globe"><img src="images/welcome/flag/lang.png"></a>
             <!--search bar-->
             <div class="search-container">
                 <form>
                       <input type="text" placeholder="Find Dishes" name="search">
-                      <button type="button"><i class="fa fa-search"></i></button>
+                    <button type="sumbit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <!--dropdown bar-->
@@ -69,81 +69,103 @@
         
         <!---------------------------------------------main: Edit only this part!!!--------------------------------------------->
         <div class="main">
-            
             <div class="container">
-                
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="row text-title wrapper">
-                        <h1>More Services</h1>
+                        <h1>Order Details - R201911203356</h1>
                     </div>
                 </div>
                 
-                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-8">
+                <div class="shopping-cart">
+                    <!-- Title -->
+                    <div class="title">Order Summary</div>
                     
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="card">
-                                <a href="#ex1" rel="modal:open"><img src="images/icons/linguistics.png"></a>
-                                <h4>Select Your Language</h4>
-                            </div>
+                    <!-- Product #1 -->
+                    <div class="item">
+                        <div class="buttons">
+                            <i class="fa fa-times-circle delete-btn" style="font-size:28px"></i>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="card">
-                                <a href="#ex5" rel="modal:open"><img src="images/icons/search.png"></a>
-                                <h4>Search your favorite food</h4>
-                            </div>
+                        
+                        <div class="image">
+                            <img src="images/welcome/pizza.jpg" class="avatar">
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="card">
-                                <a href="#ex2" rel="modal:open"><img src="images/icons/reception.png"></a>
-                                <h4>Chat to our Front Desk</h4>
-                            </div>
-                        </div>    
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="card">
-                                <a href="#ex4" rel="modal:open"><img src="images/icons/good-feedback.png"></a>
-                                <h4>Feedback</h4>
-                            </div>
+                        
+                        <div class="description">
+                            <span>Margherita</span>
+                            <span>670.0 Cals</span>
                         </div>
-                    </div>    
-                </div>
-                
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="card">
-                                <a href="#ex3" rel="modal:open"><img src="images/icons/question.png"></a>
-                                <h4>FAQs</h4>
-                            </div>
+                        <div class="quantity">
+                            <i class="fa fa-plus-square plus-btn" style="font-size:24px" ></i>
+                            <input type="text" name="name" value="1">
+                            <i class="fa fa-minus-square minus-btn" style="font-size:24px"></i>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 wrapper">
-                            <div class="card">
-                                <a href="#ex6" rel="modal:open"><img src="images/icons/call-center.png"></a>
-                                <h4>Contact Eatin</h4>
-                            </div>
+                        
+                        <div class="total-price">$16.00</div>
+                    </div>
+
+                    <!-- Product #2 -->
+                    <div class="item">
+                        <div class="buttons">
+                            <i class="fa fa-times-circle delete-btn" style="font-size:28px"></i>
                         </div>
+                        
+                        <div class="image">
+                            <img src="images/welcome/chicken-caesar-salad.jpg" class="avatar">
+                        </div>
+                        
+                        <div class="description">
+                            <span>Avocado Salad</span>
+                            <span>670.0 Cals</span>
+                        </div>
+                        <div class="quantity">
+                            <i class="fa fa-plus-square plus-btn" style="font-size:24px" ></i>
+                            <input type="text" name="name" value="1">
+                            <i class="fa fa-minus-square minus-btn" style="font-size:24px"></i>
+                        </div>
+                        
+                        <div class="total-price">$8.00</div>
                     </div>
                     
+                    <!--total-->
+                    <div class="total">
+                        <div class="col-xs-8 total-box">Subtotal:<br>GST:<br>PST:</div>
+                        <div class="col-xs-4 total-box">$16.00<br>$1.20<br>$1.68</div>
+
+                        <div class="col-xs-8 total-box" style="color: black; font-weight: 600;">Total:</div>
+                        <div class="col-xs-4 total-box" style="color: black; font-weight: 600;">$26.88</div>
+                    </div>
                     
                 </div>
-            </div>
-        </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4">
+                <div class="placeorder">
+                    <!-- Title -->
+                    <div class="title"><i class="fa fa-pencil" style="font-size:36px"></i> <span> &nbsp;&nbsp;&nbsp;&nbsp;Order Modification</span></div>
+
+                    <div class="contents">
+                        <p><strong>Order by mistake?</strong></p>
+                        <p>No problem! You can cancel this order without being charged!</p>
+                        <p><a href="order-canceled.html"><button class="button-simple button-orange">Cancel This Order</button></a></p>
+                        <br>
+                        <p><strong>Done with modification?</strong></p>
+                        <p>Click the the below button to update your order.</p>
+                        <p><a href="#update-order" rel="modal:open"><button class="button-simple button">Update This Order</button></a></p>
+                    </div>
+                    
+                </div>
+                </div>
+                
+                
+            </div><!--container-->
+        </div><!--main-->
         
-         <!--other modals-->
-        <div id="ex2" class="modal">
-            <h3>Chat to our Front Desk</h3><h5>This function is not implemented in this prototype.</h5>
-        </div>
-        <div id="ex3" class="modal">
-            <h3>FAQs</h3><h5>This function is not implemented in this prototype.</h5>
-        </div>
-        <div id="ex4" class="modal">
-            <h3>Feedback</h3><h5>This function is not implemented in this prototype.</h5>
-        </div>
-        <div id="ex5" class="modal">
-            <h3>Quick Search</h3><h5>This function is not implemented in this prototype.</h5>
-        </div>
-        <div id="ex6" class="modal">
-            <h3>Contact Eatin</h3><h5>This function is not implemented in this prototype.</h5>
+         <!--modals-->
+        <div id="update-order" class="modal">
+            <h3>Your order has been updated!</h3>
         </div>
         <!---------------------------------------------END main: Edit only this part!!!--------------------------------------------->
         
@@ -289,5 +311,36 @@
             }
         </script>
         <!--END DEFAULT: Top navigation bar Javascript-->
+        
+        
+        <!------only myorder: shopping cart Javascript-->
+        <script>
+            $('.minus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+                if (value &amp;gt; 1) {
+                    value = value - 1;
+                } else {
+                    value = 0;
+                }
+                $input.val(value);
+            });
+            
+            $('.plus-btn').on('click', function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                var $input = $this.closest('div').find('input');
+                var value = parseInt($input.val());
+                if (value &amp;lt; 100) {
+                    value = value + 1;
+                } else {
+                    value =100;
+                }
+                $input.val(value);
+            });
+        </script>
+        <!--END only myorder: shopping cart Javascript-->
     </body>
 </html>
