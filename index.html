@@ -146,60 +146,61 @@
                                 <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class = "col-xs-2"></div>
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|en)"  class="lang-flag lang-es lang-select" data-lang="en" ><img src="images/welcome/flag/1uk.png"></a>
+                                        <a href="#googtrans(en|en)"  class="lang-flag lang-es lang-select" data-lang="en" ><img src="images/welcome/flag/1uk.png">
                                         <div class="text-center lang-flag">
                                             <h5>English</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|fr)"  class="lang-flag lang-es lang-select" data-lang="fr"><img src="images/welcome/flag/2france.png"></a>
+                                        <a href="#googtrans(en|fr)"  class="lang-flag lang-es lang-select" data-lang="fr"><img src="images/welcome/flag/2france.png">
                                         <div class="text-center lang-flag">
                                             <h5>Français</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|zh-CN)"  class="lang-flag lang-es lang-select" data-lang="zh-CN"><img src="images/welcome/flag/3china.png"></a>
+                                        <a href="#googtrans(en|zh-CN)"  class="lang-flag lang-es lang-select" data-lang="zh-CN"><img src="images/welcome/flag/3china.png">
                                         <div class="text-center lang-flag">
                                             <h5>中文</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|es)"  class="lang-flag lang-es lang-select" data-lang="es"><img src="images/welcome/flag/4spanish.png"></a>
+                                        <a href="#googtrans(en|es)"  class="lang-flag lang-es lang-select" data-lang="es"><img src="images/welcome/flag/4spanish.png">
                                         <div class="text-center lang-flag">
                                             <h5>Español</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                     <div class = "col-xs-2"></div>
                                     </div>
                                     
                                     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class = "col-xs-2"></div>
-                                        <div class = "col-xs-2">
-                                        <a href="#googtrans(en|ko)"  class="lang-flag lang-es lang-select"  data-lang="ko"><img src="images/welcome/flag/8korea.png"></a>
+                                        <div class = "col-xs-2"><!--
+                                            <a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en">-->
+                                        <a href="#googtrans(en|ko)" class="lang-flag lang-es lang-select"  data-lang="ko"><img src="images/welcome/flag/8korea.png">
                                         <div class="text-center lang-flag">
                                             <h5>한글</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|de)"  class="lang-flag lang-es lang-select"  data-lang="de"><img src="images/welcome/flag/6germany.png"></a>
+                                        <a href="#googtrans(en|de)"  class="lang-flag lang-es lang-select"  data-lang="de"><img src="images/welcome/flag/6germany.png">
                                         <div class="text-center lang-flag">
                                             <h5>Deutsch</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|ru)"  class="lang-flag lang-es lang-select"  data-lang="ru"><img src="images/welcome/flag/7russia.png"></a>
+                                        <a href="#googtrans(en|ru)"  class="lang-flag lang-es lang-select"  data-lang="ru"><img src="images/welcome/flag/7russia.png">
                                         <div class="text-center lang-flag">
                                             <h5>Русский</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         <div class = "col-xs-2">
-                                        <a href="#googtrans(en|hi)"  class="lang-flag lang-es lang-select"  data-lang="hi"><img src="images/welcome/flag/5india.png"></a>
+                                        <a href="#googtrans(en|hi)"  class="lang-flag lang-es lang-select"  data-lang="hi"><img src="images/welcome/flag/5india.png">
                                         <div class="text-center lang-flag">
                                             <h5>हिन्दी</h5>
-                                        </div>
+                                        </div></a>
                                         </div> 
                                         <div class = "col-xs-2"></div>
                                     </div>
@@ -333,8 +334,33 @@
         <!--END downloaded JS Library for animation--> 
         
         <!--language-->
-        <script src="js/languageoption.js"></script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'pt', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+
+    function triggerHtmlEvent(element, eventName) {
+      var event;
+      if (document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent(eventName, true, true);
+        element.dispatchEvent(event);
+      } else {
+        event = document.createEventObject();
+        event.eventType = eventName;
+        element.fireEvent('on' + event.eventType, event);
+      }
+    }
+
+    jQuery('.lang-select').click(function() {
+      var theLang = jQuery(this).attr('data-lang');
+      jQuery('.goog-te-combo').val(theLang);
+
+      window.location = jQuery(this).attr('href');
+      location.reload();
+    });
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <!--END language-->
         
     </body>
