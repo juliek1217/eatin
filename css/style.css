@@ -8,6 +8,15 @@ html{
 }
 
 
+/*DO NOT CHANGE!! language option*/
+#google_translate_element{ display: none; }
+body{ top: 0!important; }
+.skiptranslate{ display: none; }
+
+
+
+/*END language option*/
+
 .h1, h2 {font-size: 36px;}
 .h2, h2 {font-size: 30px;}
 .h3, h3 {font-size: 24px;}
@@ -493,6 +502,54 @@ footer{
 /*-----------------      END modal      -----------------*/
 
 
+
+
+/*-------------------------flag-------------------------*/
+.lang-flag-box {
+    padding: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 60px;
+}
+
+.lang-flag img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 2rem;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+    vertical-align: middle;
+    text-decoration: none;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.lang-flag h5 {
+    font-family: 'Poppins';
+    color:white;
+    font-size: 10px;
+}
+
+.lang-flag h5:hover, .lang-flag:hover {
+    color: #c8a97e;
+    cursor: pointer;
+}
+
+/*@media (max-width: 880px) {
+    .lang-flag h5 {
+    font-size: 6px;
+    }
+    .lang-flag img {
+        width: 1rem;
+    }
+}*/
+
+
+.lang-row {
+    padding-top: 5px;
+}
+/*-----------------      END flag      -----------------*/
 
 
 
