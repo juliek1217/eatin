@@ -499,6 +499,23 @@ footer{
 .modal-row {
     padding-top: 10px;
 }
+
+
+
+.modal-image-menu img {
+    height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.modal {
+    margin-top: 120px;
+}
+
 /*-----------------      END modal      -----------------*/
 
 
