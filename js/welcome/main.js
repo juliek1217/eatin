@@ -228,7 +228,6 @@
 		    window.location.hash = hash;
 		  });
 
-
 		  if ( navToggler.is(':visible') ) {
 		  	navToggler.click();
 		  }
@@ -272,14 +271,4 @@
   });
 
 
-  $('#book_date').datepicker({
-	  'format': 'm/d/yyyy',
-	  'autoclose': true
-	});
-	$('#book_time').timepicker();
-
-
-
-
 })(jQuery);
-
