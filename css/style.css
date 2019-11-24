@@ -490,6 +490,28 @@ footer{
 .modal-row {
     padding-top: 10px;
 }
+
+/*-menu-modal-img*/
+
+.modal-image-menu img{
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.detailedmenu h5{
+  color: gray;
+  font-weight: 200;
+}
+
+.detailedmenu h4{
+  color:black;
+  font-weight: 200;
+}
 /*-----------------      END modal      -----------------*/
 
 
