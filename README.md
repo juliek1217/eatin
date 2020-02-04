@@ -57,23 +57,31 @@ Welcome page with multiple language options and featured menu.
 This gives the user an overview of our website.
 Sidebars
 ![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/multilanguage.png)
 
 ## Sidebars
 Fixed-position categorized menu (left sidebar) and shopping cart (right sidebar).
 The users always have access to different category of menu and shopping cart. The fixed-position
 shopping cart enables users to track their items in the shopping cart.
-![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/shoppingcart.png)
 
 
 ## Food Item Description
 Detailed food menu with picture, ingredients, and nutrition information.
-![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/menudetailpopup.png)
 
 ## Checkout
 Check out page allows users to review and modify their order. It provides an estimated delivery time to
 the users. Pre-order function is also available inside this page.
-![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/checkout.png)
 
 ## Order History
 Users can review their previous orders and modify or cancel the current orders.
-![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/orderhistory.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/order.png)
+
+
+## Others
+Users can review their previous orders and modify or cancel the current orders.
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/languageoptionpopup.png)
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/moreservice.png)
