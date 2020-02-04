@@ -25,6 +25,9 @@ icon( ) on the top right corner, and then choose the desired language. And the l
 display language is by clicking on the option “More”, then clicking on the “Select Your Language”, and
 then choosing the preferred language.
 
+![Add_posts](https://raw.githubusercontent.com/juliek1217/eatin/master/Eatin/posts1.PNG)
+
+
 ## Menu with detailed information
 This feature provides more detailed information about the food item to the users. When a user
 clicks on a food item, a smaller pop-up window appears showing a larger picture of the food, the
@@ -44,3 +47,33 @@ are shown for each order. The status will say “Order Delivered” if the user 
 to their room. On the other hand, if it says “Order Confirmed”, the user has an alternative to cancel or
 modify the order according to their preference. The order number is illustrated as a link to convey the user
 that they can click on it for additional functions.
+
+
+
+## 2) Showcase
+
+## Welcome Page
+Welcome page with multiple language options and featured menu.
+This gives the user an overview of our website.
+Sidebars
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+
+## Sidebars
+Fixed-position categorized menu (left sidebar) and shopping cart (right sidebar).
+The users always have access to different category of menu and shopping cart. The fixed-position
+shopping cart enables users to track their items in the shopping cart.
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+
+
+## Food Item Description
+Detailed food menu with picture, ingredients, and nutrition information.
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+
+## Checkout
+Check out page allows users to review and modify their order. It provides an estimated delivery time to
+the users. Pre-order function is also available inside this page.
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
+
+## Order History
+Users can review their previous orders and modify or cancel the current orders.
+![Profile](https://github.com/juliek1217/eatin/blob/master/Eatin_pics/welcome%20page.png)
