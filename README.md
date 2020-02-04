@@ -25,8 +25,6 @@ icon( ) on the top right corner, and then choose the desired language. And the l
 display language is by clicking on the option “More”, then clicking on the “Select Your Language”, and
 then choosing the preferred language.
 
-![Add_posts](https://raw.githubusercontent.com/juliek1217/eatin/master/Eatin/posts1.PNG)
-
 
 ## Menu with detailed information
 This feature provides more detailed information about the food item to the users. When a user
